@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://lucasmarcuzo.me">
-<img  width="920"  height="480"  src="presentation/meu-portfolio.gif">
+<img  width="780"  height="420"  src="presentation/meu-portfolio.gif">
 </p>
 
 ## 🛠 Tecnologias utilizadas:
