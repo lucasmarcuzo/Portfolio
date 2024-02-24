@@ -6,7 +6,7 @@
 </p>
 
 <div align="center">
-  <a href="https://lucasmarcuso.me">
+  <a href="https://lucasmarcuzo.me">
     <img width="150" height="40" src="https://img.shields.io/badge/Visualizar-0078d4?style=flat&logoColor=white" alt="Visualizar">
   </a>
 </div>
