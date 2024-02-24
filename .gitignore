@@ -1,0 +1,19 @@
+# Arquivos e pastas específicos do VSCode
+.vscode/
+*.code-workspace
+
+# Configurações do usuário
+.settings/
+.code-settings.json
+
+# Logs e dados temporários
+logs/
+*.log
+
+# Módulos e dependências do Node.js
+node_modules/
+
+# Arquivos de compilação TypeScript
+*.js
+*.js.map
+*.d.ts
