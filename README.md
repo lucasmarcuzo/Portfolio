@@ -5,6 +5,11 @@
 <img  width="780"  height="420"  src="presentation/meu-portfolio.gif">
 </p>
 
+<div align="center">
+  <a href="https://lucasmarcuso.me">
+    <img width="150" height="40" src="https://img.shields.io/badge/Visualizar-0078d4?style=flat&logoColor=white" alt="Visualizar">
+  </a>
+</div>
 ## 🛠 Tecnologias utilizadas:
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
