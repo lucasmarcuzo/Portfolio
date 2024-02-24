@@ -1205,38 +1205,57 @@ h3.my-profession {
 }
 
 /*Cor da barra de rolagem*/
-.projects-bg ::-webkit-scrollbar {
-    width: 12px; 
+::-webkit-scrollbar  {
+    width: 13px; 
     height: auto;
 }
 
-.projects-bg ::-webkit-scrollbar-thumb {
-    background-color: var(--skin-color); /* Cor da barra de rolagem */
-    border-radius: 5px; /* Borda arredondada */
+::-webkit-scrollbar-thumb {
+    background-color: var(--skin-color); 
+    border-radius: 5px; 
 }
 
-::-webkit-scrollbar-track {
-    background-color: var(--bg-black-900) /* Cor da área de fundo da barra de rolagem */
-}
-
-.projects-bg ::-webkit-scrollbar-track {
-    background-color: transparent; /* Cor da área de fundo da barra de rolagem */
+html ::-webkit-scrollbar-track {
+    background-color: var(--bg-black-900) 
 }
 
 /* Para navegadores Gecko (Firefox) */
-.projects-bg ::-moz-scrollbar {
-    width: 12px;
+::-moz-scrollbar {
+    width: 13px;
     height: auto; /* Ajuste a altura conforme necessário */
 }
 
-.projects-bg ::-moz-scrollbar-thumb {
+::-moz-scrollbar-thumb {
     background-color: var(--skin-color);
     border-radius: 5px; 
 }
 
-.projects-bg ::-moz-scrollbar-track {
+html ::-moz-scrollbar-track {
     background-color: var(--bg-black-900); 
 }
+
+/*Para a aba de projetos*/
+
+.projects-bg {
+    width: 13px; 
+    height: auto;
+}
+
+.projects-bg {
+    background-color: var(--skin-color); 
+    border-radius: 5px; 
+}
+
+.projects-bg ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.projects-bg ::-moz-scrollbar-track {
+    background-color: transparent;
+}
+
+
+/*Experiências*/
 
 .experience {
     flex: 0 0 100%;
