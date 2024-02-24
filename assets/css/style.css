@@ -1243,7 +1243,6 @@ html ::-moz-scrollbar-track {
 
 .projects-bg {
     background-color: var(--skin-color); 
-    border-radius: 5px; 
 }
 
 .projects-bg ::-webkit-scrollbar-track {
