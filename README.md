@@ -1,7 +1,7 @@
 <h1>👨🏻‍💻 Meu Portfólio 💻</h1>
 
 <p align="center">
-<a href="https://github.com/lucasmarcuzo/Portfolio.github.io/">
+<a href="https://lucasmarcuzo.me">
 <img  width="920"  height="480"  src="presentation/meu-portfolio.gif">
 </p>
 
