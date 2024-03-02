@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Lucas Marcuzo | Analista e Desenvolvedor de Softwares</title>
-        <link rel="icon" href="assets/icon/myLogo.png" />
+        <link rel="icon" href="assets/icon/dev.ico" type="image/x-icon">
         <meta content="Lucas Marcuzo, Analista e Desenvolvedor de Softwares" name="keywords">
         <meta content="Este é meu portfolio profissional" name="description">
         <meta content="width=device-width initial-scale=1" name="viewport">
@@ -24,7 +24,7 @@
         <link class="alternate-style" disabled href="assets/css/color-3.css" rel="stylesheet" title="color-3">
         <link class="alternate-style" disabled href="assets/css/color-4.css" rel="stylesheet" title="color-4">
         <link class="alternate-style" disabled href="assets/css/color-5.css" rel="stylesheet" title="color-5">
-        <!-- <link href="assets/css/style-switcher.css" rel="stylesheet"> -->
+        <link href="assets/css/style-switcher.css" rel="stylesheet">
     </head>
 
     <body>
@@ -873,8 +873,8 @@
                                     </div>
                                     <h5>Power BI</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 85%"></div>
-                                        <div class="skills-percent">85%</div>
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
                                     </div>
                                     <h5>Power Apps</h5>
                                     <div class="progress">
@@ -1251,14 +1251,14 @@
         <!--Estilo do Switcher-->
 
         <!--JQuery-->
-        <script>
+        <!-- <script>
             $(document).ready(function () {
                 $(".counter").counterUp({
                     delay: 10,
                     time: 1200
                 });
             })
-        </script>
+        </script> -->
 
         <!--Script para baixar o currículo -->
         <script>
@@ -2362,6 +2362,78 @@
 
             }
 
+        </script>
+
+        <!-- Script para animar o preenchimento das barras de progresso das skills -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var progressElements = document.querySelectorAll('.progress-in');
+
+                // Cria uma animação de preenchimento para cada elemento
+                progressElements.forEach(function (progressElement) {
+                    var fillAnimation = progressElement.animate(
+                        [{ width: '0' }, { width: progressElement.dataset.progress }],
+                        {
+                            duration: 2000,
+                            easing: 'ease',
+                            fill: 'forwards',
+                            iterations: 1,
+                            playState: 'paused'
+                        }
+                    );
+
+                    function isElementInViewport(el) {
+                        var rect = el.getBoundingClientRect();
+                        return (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                    }
+
+                    function checkVisibility() {
+                        if (isElementInViewport(progressElement)) {
+                            fillAnimation.play();
+                            // Remove o ouvinte de rolagem após a primeira execução
+                            window.removeEventListener('scroll', checkVisibility);
+                        } else {
+                            fillAnimation.pause();
+                        }
+                    }
+
+                    // Verifica a visibilidade inicial
+                    checkVisibility();
+
+                    // Adiciona um ouvinte de rolagem para verificar a visibilidade ao rolar
+                    window.addEventListener('scroll', checkVisibility);
+                });
+
+                // Carrega somente quando estiver na tela skills
+                var navLinks = document.querySelectorAll('.nav a');
+
+                function handleNavLinks() {
+                    progressElements.forEach(function (progressElement) {
+                        var isVisible = isElementInViewport(progressElement);
+                        var linkId = progressElement.dataset.link;
+
+                        if (isVisible) {
+                            // Adiciona a classe 'active' ao link relacionado ao elemento visível
+                            navLinks.forEach(function (link) {
+                                link.classList.remove('active');
+                            });
+
+                            document.querySelector('.nav a[data-link="' + linkId + '"]').classList.add('active');
+                        }
+                    });
+                }
+
+                // Verifica a visibilidade inicial
+                handleNavLinks();
+
+                // Adiciona um ouvinte de rolagem para verificar a visibilidade ao rolar
+                // window.addEventListener('scroll', handleNavLinks);
+            });
         </script>
 
 
