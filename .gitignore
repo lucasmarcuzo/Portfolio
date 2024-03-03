@@ -10,10 +10,3 @@
 logs/
 *.log
 
-# Módulos e dependências do Node.js
-node_modules/
-
-# Arquivos de compilação TypeScript
-*.js
-*.js.map
-*.d.ts
