@@ -1251,133 +1251,15 @@
         <!--Estilo do Switcher-->
 
         <!--JQuery-->
-        <!-- <script>
+        <script>
             $(document).ready(function () {
                 $(".counter").counterUp({
                     delay: 10,
                     time: 1200
                 });
             })
-        </script> -->
-
-        <!--Script para baixar o currículo -->
-        <script>
-            // Replace this with your Google Drive shareable link
-            var googleDriveLink = 'https://drive.google.com/file/d/13XuSlzvxibmBIcXhP_4udw_Ckfgne889/view?usp=sharing';
-
-            document.getElementById('downloadCvBtn').addEventListener('click', function () {
-                // Extract the file ID from the Google Drive link
-                var fileId = googleDriveLink.split('/file/d/')[1].split('/view')[0];
-                var directDownloadLink = 'https://drive.google.com/uc?id=' + fileId;
-
-                // Open the file in a new tab
-                window.open(directDownloadLink, '_self');
-            });
         </script>
 
-        <!--Script para enviar e-mail -->
-        <script>
-            function submitForm(event) {
-                event.preventDefault();
-
-                // Form validation
-                if (!validateForm()) {
-                    return;
-                }
-
-                // Form data
-                var name = document.getElementById("nome").value;
-                //var email = document.getElementById("email").value;
-                var subject = document.getElementById("assunto").value;
-                var message = document.getElementById("mensagem").value;
-
-                // You can perform additional actions here, such as AJAX submission
-
-                // For this example, let's log the data to the console
-                console.log("Nome: " + name);
-                //console.log("E-mail: " + email);
-                console.log("Assunto: " + subject);
-                console.log("Mensagem: " + message);
-
-                //send email
-                window.open('mailto:lucas.marcuzo@hotmail.com?subject=' + subject + '&body=' + message);
-
-                // You can also submit the form to a server using AJAX
-                // For simplicity, let's just reset the form
-                document.getElementById("contactForm").reset();
-            }
-
-            function validateForm() {
-                // Basic validation example (you can add more sophisticated validation)
-                var name = document.getElementById("nome").value;
-                //var email = document.getElementById("email").value;
-                var subject = document.getElementById("assunto").value;
-                var message = document.getElementById("mensagem").value;
-
-                if (!name || !subject || !message) {
-                    alert("Por favor preencha todos os campos.");
-                    return false;
-                }
-
-                return true;
-            }
-
-        </script>
-
-        <!--Script para suavizar a rolagem do botão até o topo -->
-        <script>
-            // Obter o botão
-            var btn = document.querySelector('.btnup');
-            btn.style.display = 'none'; // Ocultar o botão
-
-            function scrollToTop() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-
-            // Verifique se a posição de rolagem é maior que 100 pixels (ajuste conforme necessário)
-            window.onscroll = function () {
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    btn.style.display = 'block'; // Mostrar o botão
-                } else {
-                    btn.style.display = 'none'; // Ocultar o botão
-                }
-            };
-        </script>
-
-        <!--Colorir botão de navegação ativo-->
-        <script>
-            var nav = document.querySelectorAll('.nav a');
-            var navActive = document.querySelector('.nav a.active');
-
-            navActive.addEventListener('click', function () {
-                nav.forEach(function (a) {
-                    a.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-
-            window.addEventListener('scroll', function () {
-                var scroll = window.scrollY;
-                var section = document.querySelectorAll('section');
-                var sections = {};
-                var i = 0;
-
-                Array.prototype.forEach.call(section, function (e) {
-                    sections[e.id] = e.offsetTop;
-                });
-
-                for (i in sections) {
-                    if (sections[i] <= scroll + 100) {
-                        nav.forEach(function (a) {
-                            a.classList.remove('active');
-                            if (document.querySelector('a[href*=' + i + ']')) {
-                                document.querySelector('a[href*=' + i + ']').classList.add('active');
-                            }
-                        });
-                    }
-                }
-            });
-        </script>
 
 
 
