@@ -8,7 +8,7 @@
         <meta content="Lucas Marcuzo, Analista e Desenvolvedor de Softwares" name="keywords">
         <meta content="Este é meu portfolio profissional" name="description">
         <meta content="width=device-width initial-scale=1" name="viewport">
-        <meta content="#F06E4C" name="theme-color">
+        <meta content="#0078d4" name="theme-color">
 
         <!--Google Fonts-->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -34,9 +34,13 @@
 
             <!--Aside Start-->
             <div class="aside">
-                <div class="logo">
-                    <a href="#"><span>Lucas</span><br>Marcuzo</a>
-                </div>
+                <!-- <div class="logo">
+                    <a href="#"><span>Lucas</span><br>Marcuzo</a> 
+                </div>  -->
+                <div class="logo_animate">
+                    <!-- <a href="#"><span>Lucas</span><br>Marcuzo</a> -->
+                    <a href="#"><img src="assets/icon/logo.gif" style="width: 150px; height: 150px;" href="#about"></a>
+                </div> 
                 <div class="nav-toggler">
                     <span></span>
                 </div>
@@ -54,33 +58,22 @@
 
             <!--Header Start-->
             <div class="main-content">
-
                 <!--Sobre Inicio-->
                 <section class="about active section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title section-title-about padd-15">
-                                <h2>👨🏻‍💻 Olá!</h2>
+                                <h2 class="title hello">👨🏻‍💻 Olá, me chamo <span>Lucas Marcuzo,</span> seja bem-vindo(a) ao meu portfólio! <img style="margin-bottom: 0px;" alt="" src="assets\icon\gifs\mario-hello.gif" 
+                                width="36" height="36">
+                                </h2>
+                                <h3 class="my-profession">Sou <span class="typing"></span></h3>
                             </div>
                             <div class="about-info">
-                                <h3 class="hello">Me chamo <span class="name">Lucas, </span>seja bem-vindo ao meu
-                                    perfil! <img style="margin-bottom: -5px;" alt=""
-                                        src="assets\icon\gifs\mario-hello.gif" width="34" height="36"></h3>
-                                <h3 class="my-profession">Sou <span class="typing"></span></h3>
+                                <h4>Neste espaço, compartilho meus projetos, habilidades e experiências profissionais. Saiba como posso agregar valor com meu conhecimento e expertise.</h4>
                                 <p>
-                                    Possuo formação em Análise e Desenvolvimento de Sistemas pela Faculdade de
-                                    Tecnologia de Guarulhos (FATEC), ao longo da minha graduação, participei ativamente
-                                    de projetos acadêmicos, incluindo a liderança e desenvolvimento em C# de um Sistema
-                                    de Gerenciamento de Armazém (WMS) para auxiliar na aprendizagem das turmas do curso
-                                    de Logística. E no meu Trabalho de Conclusão de Curso (TCC), desenvolvi um software
-                                    em JAVA com a finalidade de simplificar, agilizar e informatizar o processo de
-                                    entrega da documentação comprobatória de estágio pelos discentes, desta forma,
-                                    reduzindo o tempo da validação de estágios pelo corpo docente da faculdade, tornando
-                                    o fluxo mais eficiente e transparente. Além disso, realizei um estágio em uma
-                                    empresa especializada no desenvolvimento de soluções integradas para gestão. Nessa
-                                    função, fui responsável pelo desenvolvimento de módulos de sistemas ERP utilizando
-                                    JAVA, bem como pela criação de relatórios utilizando Jaspersoft Studio e PostgreSQL.
-                                    Atualmente, faço Estágio em Análise de Dados e estou realizando uma segunda graduação em Banco de Dados na Faculdade das Américas (FAM).                                
+                                    Possuo formação em Análise e Desenvolvimento de Sistemas pela Faculdade de Tecnologia de Guarulhos (FATEC). No meu Trabalho de Conclusão de Curso (TCC), desenvolvi um software em Java com a finalidade de simplificar, agilizar e informatizar o processo de entrega da documentação comprobatória de estágio pelos discentes. Dessa forma, o tempo de validação dos estágios pelo corpo docente da faculdade foi reduzido, tornando o fluxo mais eficiente e transparente.
+                                    Além disso, realizei um estágio em uma empresa especializada no desenvolvimento de soluções integradas para gestão. Nessa função, fui responsável pelo desenvolvimento de módulos de sistemas ERP utilizando Java, bem como pela criação de relatórios com Jaspersoft Studio e PostgreSQL.
+                                    Atualmente, estou cursando minha segunda graduação em Banco de Dados no Centro Universitário das Américas (FAM). Além disso, atuo como estagiário na área de Análise de Dados, desenvolvendo relatórios em Power BI, realizando tratamento de dados (ETL), a construção de design no Figma e o desenvolvimento de scripts para consulta em APIs em Python para utilização no Data Warehouse (BigQuery) do Google Cloud Platform (GCP).               
                                 </p>
                             </div>
                             <div class="about-img padd-15">
@@ -91,7 +84,7 @@
 
                     <!--Icones de redes sociais-->
                     <div>
-                        <nav id="media_links">
+                        <nav id="media-links">
                             <ul id="list">
                                 <li id="github">
                                     <a href="https://github.com/lucasmarcuzo/" target="_blank" style="padding: 10px">
@@ -119,8 +112,9 @@
                                     <a href="https://open.spotify.com/user/12186237186" target="_blank"
                                         style="padding: 10px">
                                         <span style="position: relative; display: inline-block;">
-                                            <img src="https://cdn.icon-icons.com/icons2/2108/PNG/48/spotify_icon_130826.png"
-                                                height="35" width="35" style="position: absolute; bottom: -2px;">
+                                            <i class="fa fa-square" style="color: #ffffff00;"></i>
+                                            <img src="assets/icon/spotify.png" height="36" width="36"
+                                                style="position: absolute; right: 0px;  bottom: 14px;">
                                         </span>
                                     </a>
                                 </li>
@@ -176,23 +170,9 @@
                                                                     class="fa fa-graduation-cap"></i> BANCO DE DADOS</h4>
                                                         </h3>
                                                         <p class="timeline-text">
-                                                            <b>FAM - FACULDADE DAS AMÉRICAS</b><br>
+                                                            <b>FAM - CENTRO UNIVERSITÁRIO DAS AMÉRICAS</b><br>
                                                             NÍVEL TECNÓLOGO <br>
                                                             01/2024 - CURSANDO
-                                                        </p>
-                                                    </div>
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <!-- <i class="fa fa-calendar"></i>2020 - 2023 -->
-                                                            <h4 class="timeline-title"><i
-                                                                    class="fa fa-graduation-cap"></i> ADMINISTRAÇÃO
-                                                                EMPRESARIAL</h4>
-                                                        </h3>
-                                                        <p class="timeline-text">
-                                                            <b>FAT - ESCOLA TÉCNICA</b><br>
-                                                            NÍVEL TÉCNICO <br>
-                                                            10/2023 - CURSANDO
                                                         </p>
                                                     </div>
                                                     <div class="timeline-item">
@@ -207,6 +187,20 @@
                                                             <b>FATEC - FACULDADE DE TECNOLOGIA DE GUARULHOS</b><br>
                                                             NÍVEL TECNÓLOGO<br>
                                                             2020 - 2023
+                                                        </p>
+                                                    </div>
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <!-- <i class="fa fa-calendar"></i>2020 - 2023 -->
+                                                            <h4 class="timeline-title"><i
+                                                                    class="fa fa-graduation-cap"></i> ADMINISTRAÇÃO
+                                                                EMPRESARIAL</h4>
+                                                        </h3>
+                                                        <p class="timeline-text">
+                                                            <b>FAT - ESCOLA TÉCNICA</b><br>
+                                                            NÍVEL TÉCNICO <br>
+                                                            2023 - 2023
                                                         </p>
                                                     </div>
                                                     <div class="timeline-item">
@@ -346,9 +340,9 @@
                         </div>
                     </div>
                 </section>
-                <!--Formações Section End-->
+                <!--Formações Fim -->
 
-                <!--Experiencias Inicio-->
+                <!--Experiências Inicio-->
                 <section class="education-experience active section" id="experiences">
                     <div class="container">
                         <div class="section-title padd-15" style="margin-top: -65px;">
@@ -366,28 +360,22 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <h4 class="timeline-title"><i
-                                                                    class="fa fa-briefcase"></i>&nbsp OPTIMUS SOLUTIONS TECNOLOGIA E DADOS LTDA.
+                                                            </h3><h4 class="timeline-title"><i class="fa fa-briefcase"></i>&nbsp; OPTIMUS SOLUTIONS TECNOLOGIA E DADOS LTDA.
                                                             </h4>
-                                                        </h3>
+                                                        
                                                         <p class="timeline-text">
                                                             <b>ESTÁGIO - ANALISTA DE DADOS</b><br>
-                                                            Experiência como Analista de Dados, com foco em
-                                                            desenvolvimento de relatórios e dashboards em Power BI,
-                                                            criação de consultas SQL, modelagem de dados, análise de
-                                                            dados, suporte ao cliente/usuário, manutenção dos scripts
-                                                            <br>
+                                                            Experiência como Analista de Dados, com foco em desenvolvimento de Dashboards em Power BI, realizando a extração, modelagem e tratamento dos dados (ETL), além da criação de consultas em SQL, suporte ao cliente/usuário, elaboração de scripts para consulta e carregamento dos dados em Python, e o gerenciamento do data warehouse no Google Cloud Platform (Big Query).<br>
                                                             <b>De</b> 04/2024 <b>-</b> ATUALMENTE
                                                         </p>
                                                     </div>
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <h4 class="timeline-title"><i
-                                                                    class="fa fa-briefcase"></i>&nbsp SUPPORT SISTEMAS
+                                                            </h3><h4 class="timeline-title"><i class="fa fa-briefcase"></i>&nbsp; SUPPORT SISTEMAS
                                                                 DE GESTÃO
                                                             </h4>
-                                                        </h3>
+                                                        
                                                         <p class="timeline-text">
                                                             <b>ESTÁGIO - DESENVOLVEDOR JAVA WEB</b><br>
                                                             Experiência como Desenvolvedor WEB de sistemas de gestão,
@@ -400,11 +388,10 @@
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <h4 class="timeline-title"><i
-                                                                    class="fa fa-briefcase"></i>&nbsp CIA. BRASILEIRA DE
+                                                            </h3><h4 class="timeline-title"><i class="fa fa-briefcase"></i>&nbsp; CIA. BRASILEIRA DE
                                                                 DISTRIBUIÇÃO
                                                             </h4>
-                                                        </h3>
+                                                        
                                                         <p class="timeline-text">
                                                             <b>APRENDIZ - OPERADOR DE CAIXA</b><br>
                                                             Experiência no atendimento, processamento de pagamentos
@@ -422,19 +409,67 @@
                         </div>
                     </div>
                 </section>
-                <!-- Experiencias Section End -->
+                <!-- Experiencias Fim -->
 
-                <!--Certificações Section End-->
-                <section class="certificates active section" style="margin-top: -63px;" id="certificates">
+                <!--Certificações Inicio -->
+                <section class="certificates active section" id="certificates">
                     <div class="container">
                         <div class="row">
-                            <div class="section-title padd-15">
+                            <div class="section-title padd-15" style="margin-left: -10px;">
                                 <h2>📜 Certificações</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="certificates-heading padd-15">
-                                <h3 class="title" style="margin-bottom: 15px;">📄 Minhas Principais Certificações:</h3>
+                                <h3 class="title" style="margin-bottom: 15px;">📄 Principais Certificações:</h3>
+                            </div>
+                            <div class="row">
+                                <div class="gallery">
+                                    <div class="image" data-name="headphone"
+                                    onclick="openImage('assets/image/certificate/diploma-fatec-ads.png')">
+                                    <span><img alt="" src="assets/image/certificate/diploma-fatec-ads.png"></span>
+                                    <p class="gallery-image-text">
+                                        Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas
+                                        <br><b>Instituição: </b>FATEC Guarulhos
+                                        <br><b>Emitido em: </b>11/2023
+                                    </p>
+                                    </div>
+
+                                    <div class="image" data-name="bag"
+                                    onclick="openImage('assets/image/certificate/curso-tecnico-administracao-FAT.png')">
+                                    <span><img alt="" src="assets/image/certificate/curso-tecnico-administracao-FAT.png"></span>
+                                    <p class="gallery-image-text">
+                                        Curso Técnico de Administração Empresarial
+                                        <br><b>Instituição: </b>FAT -  Fundação de Apoio à Tecnologia
+                                        <br><b>Emitido em: </b>10/2023
+                                    </p>
+                                    </div>
+
+                                    <div class="image" data-name="bag"
+                                    onclick="openImage('assets/image/certificate/operador-computador-ifto.png')">
+                                    <span><img alt="" src="assets/image/certificate/operador-computador-ifto.png"></span>
+                                    <p class="gallery-image-text">
+                                        Curso de Operador de Computador
+                                        <br><b>Instituição: </b>IFTO - Instituto Federal do Tocantins
+                                        <br><b>Emitido em: </b>10/2020
+                                    </p>
+                                    </div>
+
+                                    <div class="image" data-name="bag"
+                                        onclick="openImage('assets/image/certificate/ciee-comercio-varejo.png')">
+                                        <span><img alt="" src="assets/image/certificate/ciee-comercio-varejo.png"></span>
+                                        <p class="gallery-image-text">
+                                            Curso de Comércio e Varejo
+                                            <br><b>Instituição: </b>CIEE - Centro de Integração Empresa-Escola
+                                            <br><b>Emitido em: </b>01/2020
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="certificates-heading padd-15">
+                                <h3 class="title" style="margin-top: 35px; margin-bottom: 15px;">📃 Outras Certificações:</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -460,7 +495,7 @@
                                     </p>
                                 </div>
 
-                                <div class="image" data-name="headphone"
+                                <!-- <div class="image" data-name="headphone"
                                     onclick="openImage('assets/image/certificate/diploma-fatec-ads.png')">
                                     <span><img alt="" src="assets/image/certificate/diploma-fatec-ads.png"></span>
                                     <p class="gallery-image-text">
@@ -468,7 +503,7 @@
                                         <br><b>Instituição: </b>FATEC Guarulhos
                                         <br><b>Emitido em: </b>11/2023
                                     </p>
-                                </div>
+                                </div> -->
 
                                 <div class="image" data-name="headphone"
                                     onclick="openImage('assets/image/certificate/certificado-inpi-07-2023.png')">
@@ -706,7 +741,7 @@
                                     </p>
                                 </div>
 
-                                <div class="image" data-name="bag"
+                                <!-- <div class="image" data-name="bag"
                                     onclick="openImage('assets/image/certificate/operador-computador-ifto.png')">
                                     <span><img alt=""
                                             src="assets/image/certificate/operador-computador-ifto.png"></span>
@@ -725,29 +760,30 @@
                                         <br><b>Instituição: </b>CIEE - Centro de Integração Empresa-Escola
                                         <br><b>Emitido em: </b>01/2020
                                     </p>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
                     </div>
                 </section>
-                <!--Certificações Section End-->
+                <!--Certificações Fim -->
 
                 <!--Skills Inicio-->
                 <section class="skills active section" id="skills">
                     <div class="container">
                         <div class="row">
-                            <div class="section-title padd-15">
+                            <div class="section-title padd-15" style="margin-left: -10px;">
                                 <h2>🤹🏻‍♂️ Habilidades</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="skills-heading padd-15">
-                                <h3 class="title">⚙️ Minhas Principais Habilidades:</h3>
+                                <h3 class="title">🧠 Hard Skills (Habilidades Técnicas):</h3>
                             </div>
                         </div>
                         <div class="row">
-                            <!--skills item start-->
+                            <!--hard skills inicio-->
+                            <!--Backend-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -772,13 +808,19 @@
                                         <div class="progress-in" style="width: 80%"></div>
                                         <div class="skills-percent">80%</div>
                                     </div>
-                                    <h5>C</h5>
+                                    <h5>Python - Anaconda</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 30%"></div>
-                                        <div class="skills-percent">30%</div>
+                                        <div class="progress-in" style="width: 70%"></div>
+                                        <div class="skills-percent">70%</div>
                                     </div>
+                                    <!-- <h5>C</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 40%"></div>
+                                        <div class="skills-percent">40%</div>
+                                    </div> -->
                                 </div>
                             </div>
+                            <!--Frontend-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -798,16 +840,22 @@
                                     </div>
                                     <h5>CSS</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 80%"></div>
-                                        <div class="skills-percent">80%</div>
+                                        <div class="progress-in" style="width: 70%"></div>
+                                        <div class="skills-percent">70%</div>
                                     </div>
                                     <h5>JavaScript</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 45%"></div>
-                                        <div class="skills-percent">45%</div>
+                                        <div class="progress-in" style="width: 40%"></div>
+                                        <div class="skills-percent">40%</div>
                                     </div>
+                                    <!-- <h5>Sass/SCSS & Less</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 30%"></div>
+                                        <div class="skills-percent">30%</div>
+                                    </div> -->
                                 </div>
                             </div>
+                            <!--Mobile-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -835,8 +883,128 @@
                                         <div class="progress-in" style="width: 50%"></div>
                                         <div class="skills-percent">50%</div>
                                     </div>
+                                    <!-- <h5>Dart</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 50%"></div>
+                                        <div class="skills-percent">50%</div>
+                                    </div> -->
                                 </div>
                             </div>
+                            <!--Análise de Dados-->
+                            <div class="skills-item padd-15">
+                                <div class="skills-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-magnifying-glass-chart"></i>
+                                    </div>
+                                    <h4>Análise de Dados</h4>
+                                    <p>
+                                        Análise de dados, utilizando do Excel, Power BI, Power Apps, etc.
+                                        Realizando a automação de processos e a análise de dados,
+                                        criando relatórios e dashboards interativos.
+                                        <br>
+                                    </p>
+                                    <h5>Power BI</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skills-percent">90%</div>
+                                    </div>
+                                    <h5>Excel</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
+                                    </div>
+                                    <h5>Power Apps</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 40%"></div>
+                                        <div class="skills-percent">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Banco de Dados-->
+                            <div class="skills-item padd-15">
+                                <div class="skills-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-database"></i>
+                                    </div>
+                                    <h4>Banco de Dados</h4>
+                                    <p>
+                                        Modelagem e manipulação de dados,
+                                        no SQL, MySQL, PostgreSQL, MongoDB, etc.
+                                        Realizando a automação de requisições
+                                        e a otimização de consultas ao banco de dados.
+                                    </p>
+                                    <h5>SQL</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skills-percent">90%</div>
+                                    </div>
+                                    <h5>T-SQL</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
+                                    </div>
+                                    <h5>MongoDB</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 40%"></div>
+                                        <div class="skills-percent">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Cloud Computing-->
+                            <div class="skills-item padd-15">
+                                <div class="skills-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-cloud"></i>
+                                    </div>
+                                    <h4>Cloud Computing</h4>
+                                    <p>
+                                        Criação de soluções na nuvem usando AWS, Azure, Google Cloud, com foco em escalabilidade, armazenamento e alta disponibilidade.
+                                    </p>
+                                    <h5>Google Cloud</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 70%"></div>
+                                        <div class="skills-percent">70%</div>
+                                    </div>
+                                    <h5>AWS</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 50%"></div>
+                                        <div class="skills-percent">50%</div>
+                                    </div>
+                                    <h5>Azure</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 30%"></div>
+                                        <div class="skills-percent">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Design (UI/UX) e Prototipação-->
+                            <div class="skills-item padd-15">
+                                <div class="skills-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                    <h4>Design (UI/UX) & Prototipação</h4>
+                                    <p>
+                                        Criação de interfaces intuitivas e centradas no usuário, focando em usabilidade, acessibilidade e experiência visual. Utilização de ferramentas como Figma e Adobe XD para prototipação e design.
+                                    </p>
+                                    <h5>Figma</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skills-percent">90%</div>
+                                    </div>
+                                    <h5>Canva</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
+                                    </div>
+                                    <h5>Adobe XD</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 30%"></div>
+                                        <div class="skills-percent">30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Testes-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -851,8 +1019,8 @@
                                     </p>
                                     <h5>JUnit</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skills-percent">75%</div>
+                                        <div class="progress-in" style="width: 60%"></div>
+                                        <div class="skills-percent">60%</div>
                                     </div>
                                     <h5>Mockito</h5>
                                     <div class="progress">
@@ -866,65 +1034,34 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--IDEs-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
-                                        <i class="fa fa-database"></i>
+                                        <i class="fa fa-wrench"></i>
                                     </div>
-                                    <h4>Banco de Dados</h4>
+                                    <h4>IDEs</h4>
                                     <p>
-                                        Modelagem e manipulação de dados,
-                                        no SQL, MySQL, PostgreSQL, MongoDB, etc.
-                                        Realizando a automação de requisições
-                                        e a otimização de consultas ao banco de dados.
+                                        Proficiente no uso de ambientes de desenvolvimento integrados, como Visual Studio, IntelliJ, PyCharm, Eclipse, NetBeans, etc. Experiência em configurar extensões, depuração de código, controle de versões.
                                     </p>
-                                    <h5>MySQL</h5>
+                                    <h5>NetBeans</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skills-percent">90%</div>
+                                        <div class="progress-in" style="width: 100%"></div>
+                                        <div class="skills-percent">100%</div>
                                     </div>
-                                    <h5>SQL</h5>
+                                    <h5>Visual Studio / Code</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 100%"></div>
+                                        <div class="skills-percent">100%</div>
+                                    </div>
+                                    <h5>Android Studio</h5>
                                     <div class="progress">
                                         <div class="progress-in" style="width: 80%"></div>
                                         <div class="skills-percent">80%</div>
                                     </div>
-                                    <h5>MongoDB</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 60%"></div>
-                                        <div class="skills-percent">60%</div>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="skills-item padd-15">
-                                <div class="skills-item-inner">
-                                    <div class="icon">
-                                        <i class="fa fa-magnifying-glass-chart"></i>
-                                    </div>
-                                    <h4>Análise de Dados</h4>
-                                    <p>
-                                        Análise de dados, utilizando do Excel, Power BI, Power Apps, etc.
-                                        Realizando a automação de processos e a análise de dados,
-                                        criando relatórios e dashboards interativos.
-                                        <br>
-                                        <br>
-                                    </p>
-                                    <h5>Excel</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skills-percent">90%</div>
-                                    </div>
-                                    <h5>Power BI</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 80%"></div>
-                                        <div class="skills-percent">80%</div>
-                                    </div>
-                                    <h5>Power Apps</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 70%"></div>
-                                        <div class="skills-percent">70%</div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!--Sistemas Operacionais-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -943,44 +1080,44 @@
                                     </div>
                                     <h5>Linux</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skills-percent">75%</div>
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
                                     </div>
                                     <h5>Mac OS</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 20%"></div>
-                                        <div class="skills-percent">20%</div>
+                                        <div class="progress-in" style="width: 30%"></div>
+                                        <div class="skills-percent">30%</div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Metodologias Ágeis-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
-                                        <i class="fa fa-gears"></i>
+                                        <i class="fa fa-cogs"></i>
                                     </div>
-                                    <h4>IDEs</h4>
+                                    <h4>Metodologias Ágeis</h4>
                                     <p>
-                                        Conhecimento e experiência com IDEs e ferramentas,
-                                        como Eclipse, IntelliJ, Visual Studio, NetBeans, etc.
-                                        Podendo realizar a instalação, configuração e manutenção.
+                                        Proficiente em metodologias ágeis, como Scrum, Kanban e XP, com experiência em colaboração, entregas contínuas e práticas de melhoria contínua.
                                     </p>
-                                    <h5>NetBeans</h5>
+                                    <h5>Kanban</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 100%"></div>
-                                        <div class="skills-percent">100%</div>
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skills-percent">80%</div>
                                     </div>
-                                    <h5>IntelliJ</h5>
+                                    <h5>Scrum</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skills-percent">90%</div>
+                                        <div class="progress-in" style="width: 70%"></div>
+                                        <div class="skills-percent">70%</div>
                                     </div>
-                                    <h5>Visual Studio / Code</h5>
+                                    <h5>XP (Extreme Programming)</h5>
                                     <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skills-percent">90%</div>
+                                        <div class="progress-in" style="width: 50%"></div>
+                                        <div class="skills-percent">50%</div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Outras Habilidades-->
                             <div class="skills-item padd-15">
                                 <div class="skills-item-inner">
                                     <div class="icon">
@@ -992,80 +1129,263 @@
                                         como Git, GitHub, GitLab, Docker, Kubernetes, etc.
                                         Podendo realizar a instalação, configuração e manutenção.
                                     </p>
-                                    <h5>Jaspersoft Studio</h5>
+                                    <h5>Git / GitHub</h5>
                                     <div class="progress">
                                         <div class="progress-in" style="width: 100%"></div>
                                         <div class="skills-percent">100%</div>
                                     </div>
-                                    <h5>Git / GitHub</h5>
+                                    <h5>Postman</h5>
                                     <div class="progress">
                                         <div class="progress-in" style="width: 90%"></div>
                                         <div class="skills-percent">90%</div>
                                     </div>
-                                    <h5>Hibernate</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 45%"></div>
-                                        <div class="skills-percent">45%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--skills item end-->
-                        </div>
-                        <!-- <div class="skills">
-                            <div class="row">
-                                <div class="skills-item padd-15">
-                                    <h5>JAVA</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skills-percent">80%</div>
-                                    </div>
-                                </div>
-                                <div class="skills-item padd-15">
-                                    <h5>PYTHON</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 80%"></div>
-                                        <div class="skills-percent">50%</div>
-                                    </div>
-                                </div>
-                                <div class="skills-item padd-15">
-                                    <h5>REACT</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skills-percent">50%</div>
-                                    </div>
-                                </div>
-                                <div class="skills-item padd-15">
-                                    <h5>JAVA SCRIPT</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 60%"></div>
-                                        <div class="skills-percent">60%</div>
-                                    </div>
-                                </div>
-                                <div class="skills-item padd-15">
-                                    <h5>GO</h5>
+                                    <h5>Docker</h5>
                                     <div class="progress">
                                         <div class="progress-in" style="width: 30%"></div>
                                         <div class="skills-percent">30%</div>
                                     </div>
                                 </div>
-                                <div class="skills-item padd-15">
-                                    <h5>PHP</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 30%"></div>
-                                        <div class="skills-percent">20%</div>
+                            </div>
+                        </div>
+                        <!--hard skills fim-->
+
+                        <!--Soft Skills Inicio -->
+                        <div class="row">
+                            <div class="skills-heading padd-15">
+                                <h3 class="title">🫱🏻‍🫲🏻 Soft Skills (Habilidades Sociocomportamentais):</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skills-soft-item padd-15">
+                                <div class="skills-soft-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <h4>Soft Skills</h4>
+                                    <p>
+                                        Soft skills são competências comportamentais e sociais essenciais para uma interação eficaz e harmoniosa com os outros. Elas incluem habilidades como comunicação, empatia, trabalho em equipe, resolução de problemas e adaptabilidade. Essas qualidades são fundamentais para a colaboração, construção de bons relacionamentos profissionais e enfrentamento de desafios. Portanto, devemos sempre buscar a constante melhoria dessas habilidades, aprimorando-as e superando nossas limitações.
+                                    </p>
+                                    <div class="skills-item padd-15"></div>
+                        
+                                    <!-- Container para 4 colunas -->
+                                    <div class="star-rating-container">
+                                        <div class="column">
+                                            <h5>Responsabilidade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                            </div>
+                                            <h5>Produtividade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                            </div>
+                                            <h5>Sociabilidade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                            </div>
+                                            <h5>Ética Profissional</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Orientação para Resultados</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Capacidade de Concentração</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5>Competência Intercultural</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Capacidade de Organização</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Inteligência Emocional</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Resolução de Problemas</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Trabalho em Equipe</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Gestão de Tempo</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5>Adaptabilidade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Criatividade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Inovação</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Empatia</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Comunicação Efetiva</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Pensamento Crítico</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5>Flexibilidade</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Colaboração</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Iniciativa</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Autonomia</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star-half filled"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Liderança</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h5>Negociação</h5>
+                                            <div class="star-rating">
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star filled"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        
+                        <!--Soft Skills Fim -->
                     </div>
                 </section>
-                <!--Skills Inicio-->
+                <!-- Skills Fim -->
 
-                <!--Projetos Section End-->
+
+
+                <!--Projetos Inicio -->
                 <section class="portfolio active section" id="projects">
                     <div class="container">
                         <div class="row">
-                            <div class="section-title padd-15">
+                            <div class="section-title padd-15"style="margin-left: -10px;">
                                 <h2>👨🏻‍💻 Projetos</h2>
                             </div>
                         </div>
@@ -1172,13 +1492,13 @@
                         </div>
                     </div>
                 </section>
-                <!--Projetos Section End-->
+                <!--Projetos Fim -->
 
-                <!--Contato Section Start-->
+                <!--Contato Inicio -->
                 <section class="contact active section" id="contactMe">
                     <div class="container">
                         <div class="row">
-                            <div class="section-title padd-15">
+                            <div class="section-title padd-15" style="margin-left: -7px;">
                                 <h2>📞 Contato</h2>
                             </div>
                         </div>
@@ -1261,7 +1581,7 @@
                         <!--Contato Enviar email-->
                     </div>
                 </section>
-                <!--Contato Section End-->
+                <!--Contato Fim -->
 
                 <!--Botão para subir ao topo (Footer Start)-->
                 <div class="row">
@@ -1305,7 +1625,7 @@
         <!--Script para baixar o currículo -->
         <script>
             // Replace this with your Google Drive shareable link
-            var googleDriveLink = 'https://drive.google.com/file/d/1BH4UZIftYeolLwQTOodI9fMD1hRgKM2Z/view?usp=sharing';
+            var googleDriveLink = 'https://drive.google.com/file/d/1GIkDiX57MwTy9xTnYJt2sljqWAGklZvA/view?usp=sharing';
 
             document.getElementById('downloadCvBtn').addEventListener('click', function () {
                 // Extract the file ID from the Google Drive link
@@ -2493,4 +2813,4 @@
         <script src="assets/script/style-switcher.js"></script>
     </body>
 
-</htm>
+</html>

@@ -89,7 +89,7 @@ ul {
 }
 
 .section-title h2 {
-    font-size: 40px;
+    font-size: 28px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
@@ -149,10 +149,10 @@ h3.title{
     transform: scale(1.05);
 }
 
-#media_links {
+#media-links {
     position: absolute;
     display: flex;
-    bottom: -1.0vh;
+    bottom: 0.0vh;
     left: 21.5vw;
 }
 
@@ -224,7 +224,7 @@ h3.title{
     font-weight: 400;
 }
 
-/* aside section */
+/* aside section (menu) */
 .aside {
     width: 270px;
     background: var(--bg-black-100);
@@ -240,13 +240,21 @@ h3.title{
     z-index: 0;
 }
 
+/* Posição do logo e do menu */
 .aside .logo {
     position: absolute;
     top: 50px;
     left: 22%;
     font-size: 30px;
     text-transform: capitalize;
-    animation: logoEnlarge 7s infinite linear;  /* Ajuste a duração conforme necessário */
+    animation: logoEnlarge 7s infinite linear;  
+}
+
+.aside .logo_animate{
+    position: absolute;
+    top: 35px;
+    left: 24%;
+    animation: logoEnlarge 8s infinite linear 3s;  
 }
 
 /* Animação do logo */
@@ -384,22 +392,27 @@ h3.title{
     padding-left: 15px;
 }
 
-h3.hello {
-    font-size: 23px;
-    margin: 15px 0;
-    margin-bottom: -5px;
+h2.hello {
+    font-size: 27px;
+    margin: -5px 0;
+    margin-bottom: 10px; 
+    display: flex; /* Mantém tudo na mesma linha */
+    align-items: center;
+    gap: 5px; /* Ajuste o espaçamento entre os elementos */
 }
 
-h3.hello span {
+h2.hello span {
     font-family: 'Clicker Script', cursive;
-    font-size: 28px;
+    font-size: 29px;
     font-weight: 700;
     color: var(--skin-color);
+    display: inline; /* Mantém o texto na mesma linha */
 }
 
 h3.my-profession {
-    font-size: 28px;
-    margin: 15px 0;
+    font-size: 22px;
+    margin: 25px 0;
+    margin-bottom: -10px;
 }
 
 .typing {
@@ -407,6 +420,7 @@ h3.my-profession {
 }
 
 .about-info p {
+    margin-top: 10px;
     margin-bottom: 70px;
     font-size: 15px;
     color: var(--text-black-700);
@@ -419,7 +433,7 @@ h3.my-profession {
     max-width: 35%;
     text-align: center;
     position: relative;
-    margin-top: -30px;
+    margin-top: -25px;
     margin-left: 20px;
 }
 
@@ -431,7 +445,7 @@ h3.my-profession {
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: -1px;
-    bottom: 25px;
+    bottom: 0px;
     animation: autoEnlarge 4s infinite linear;  /* Ajuste a duração conforme necessário */
 }
 
@@ -443,7 +457,7 @@ h3.my-profession {
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 25px;
-    top: -25px;
+    top: -30px;
     animation: autoEnlarge 4s infinite linear;  /* Ajuste a duração conforme necessário */
 }
 
@@ -473,10 +487,10 @@ h3.my-profession {
 
 /*education-experience*/
 
-.education-experience .education-experience-content {
+/* .education-experience .education-experience-content {
     flex: 0 0 100%;
     max-width: 100%;
-}
+} */
 
 .education-experience .education-experience-content .education-experience-text {
     flex: 0 0 100%;
@@ -606,7 +620,7 @@ h3.my-profession {
 }
 
 .education-experience .education-experience-content .timeline .timeline-date {
-    font-weight: 400;
+    font-weight: 40;
     font-size: 14px;
     margin-bottom: 10px;
     content: var(--text-black-700);
@@ -655,7 +669,7 @@ h3.my-profession {
     background: #1c2520;
     z-index: 2;
     opacity: 0;
-    webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -670,7 +684,7 @@ h3.my-profession {
 }
 
 .image {
-    webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -715,7 +729,7 @@ h3.my-profession {
     max-width: 33.33%;
 }
 
-.skills .skills-item .skills-item-inner {
+.skills .skills-item .skills-item-inner, .skills-soft-item .skills-soft-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -724,11 +738,11 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.skills .skills-item .skills-item-inner:hover {
+.skills .skills-item .skills-item-inner:hover, .skills-soft-item .skills-soft-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.skills .skills-item .skills-item-inner .icon {
+.skills .skills-item .skills-item-inner .icon, .skills-soft-item .skills-soft-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -738,23 +752,23 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.skills .skills-item .skills-item-inner .icon .fa {
+.skills .skills-item .skills-item-inner .icon .fa, .skills-soft-item .skills-soft-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
 
-.skills .skills-item .skills-item-inner:hover .icon {
+.skills .skills-item .skills-item-inner:hover .icon, .skills-soft-item .skills-soft-item-inner:hover .icon {
     background: var(--skin-color);
 }
 
-.skills .skills-item .skills-item-inner:hover .icon .fa {
+.skills .skills-item .skills-item-inner:hover .icon .fa, .skills-soft-item .skills-soft-item-inner:hover .icon .fa {
     font-size: 25px;
     color: white;
 }
 
-.skills .skills-item .skills-item-inner h4 {
+.skills .skills-item .skills-item-inner h4, .skills-soft-item .skills-soft-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
@@ -762,7 +776,7 @@ h3.my-profession {
     text-transform: capitalize;
 }
 
-.skills .skills-item .skills-item-inner p {
+.skills .skills-item .skills-item-inner p, .skills-soft-item .skills-soft-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
@@ -778,14 +792,19 @@ h3.my-profession {
     font-weight: 500;
 }
 
-/*Skills Percent*/
+/* Skills Percent */
 
 .skills .skills-item {
     flex: 0 0 33.33%;
-    max-width: 33.33%;
+    max-width: 33.33%;   
 }
 
-.skills .skills-item h5 {
+.skills .skills-soft-item {
+    flex: 0 0 100%;
+    max-width: 100%; 
+}
+
+.skills .skills-item h5, .skills-soft-item h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
@@ -795,7 +814,7 @@ h3.my-profession {
     margin-top: 15px;
 }
 
-.skills .skills-item .progress {
+.skills .skills-item .progress, .skills-soft-item .progress {
     background-color: var(--bg-black-50);
     height: 7px;
     border-radius: 4px;
@@ -803,11 +822,11 @@ h3.my-profession {
     position: relative;
 }
 
-.skills .skills-item p {
+.skills .skills-item p, .skills-soft-item p {
     margin-bottom: 25px;
 }
 
-.skills-item .progress .progress-in {
+.skills .skills-item .progress .progress-in, .skills-soft-item .progress .progress-in {
     position: absolute;
     left: 0;
     top: 0;
@@ -816,16 +835,7 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.skills .skills-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.skills .skills-item .skills-percent {
+.skills .skills-item .skills-percent, .skills-soft-item .skills-percent {
     position: absolute;
     right: 0;
     color: var(--text-black-900);
@@ -896,7 +906,6 @@ h3.my-profession {
     /*size change*/
     font-size: 25px;
     color: white;
-
 }
 
 .portfolio h4{
@@ -1111,6 +1120,7 @@ h3.my-profession {
 @media (max-width: 991px) {
 
     .skills .skills-item,
+    .skills-soft-item,
     .portfolio .portfolio-item,
     .contact .contact-info-item {
         flex: 0 0 50%;
@@ -1132,7 +1142,7 @@ h3.my-profession {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .skills .skills-item,
+    .skills .skills-item, .skills-soft-item,
     .education-experience .education-experience-content .experience .curses,
     .education-experience .education-experience-content .education-experience,
     .education-experience .education-experience-content .skills,
@@ -1414,7 +1424,72 @@ html ::-moz-scrollbar-track {
     height: auto;
 }
 
+/*Estilos para o sistema de estrelas*/
+.star-rating-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espaçamento horizontal entre as colunas */
+    margin-top: 20px;
+}
 
+/* Cada coluna ocupa 25% da largura */
+.star-rating-container .column {
+    flex: 0 0 25%; /* Cada coluna com largura fixa de 25% */
+    text-align: center;
+}
 
+/* Estilo para o título das colunas (h5) */
+.star-rating-container .column h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Estilo para o star-rating */
+.star-rating-container .column .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre estrelas */
+    margin-bottom: 0px; /* Espaçamento inferior */
+}
+
+/* Estilo das estrelas */
+.star-rating-container .column .star-rating .fa {
+    font-size: 20px;
+    color: #dcdcdc; /* Cor das estrelas não preenchidas */
+}
+
+.star-rating-container .column .star-rating .fa.filled {
+    color: var(--skin-color); /* Cor das estrelas preenchidas */
+}
+
+/* Contêiner geral para dividir as colunas */
+.star-rating-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espaçamento horizontal entre as colunas */
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Cada coluna ocupa 25% da largura */
+.star-rating-container .column {
+    flex: 0 0 25%; /* Cada coluna com largura fixa de 25% */
+    text-align: center;
+    position: relative;
+}
+
+/* Barra separadora */
+.star-rating-container .column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e0e0e0; /* Cor cinza clara */
+}
 
 

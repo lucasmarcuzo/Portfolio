@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-font-size: 100vh;
+    min-height: 100vh;
     background: url("../image/Background.png");
     background-size: cover;
 }
@@ -48,7 +48,7 @@ body{
 }
 .project{
     position: absolute;
-    webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .project:hover{
