@@ -387,8 +387,8 @@ h3.title{
 }
 
 .about .about-info {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 65%;
+    max-width: 65%;
     padding-left: 15px;
 }
 
@@ -422,19 +422,19 @@ h3.my-profession {
 .about-info p {
     margin-top: 10px;
     margin-bottom: 70px;
-    font-size: 15px;
+    font-size: 14.5px;
     color: var(--text-black-700);
     text-align: justify;
     line-height: 23.5px;
 }
 
 .about .about-img {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 25%;
+    max-width: 25%;
     text-align: center;
     position: relative;
     margin-top: -25px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .about-img::after {
@@ -444,8 +444,8 @@ h3.my-profession {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: -1px;
-    bottom: 0px;
+    right: -50px;
+    bottom: -40px;
     animation: autoEnlarge 4s infinite linear;  /* Ajuste a duração conforme necessário */
 }
 
@@ -456,8 +456,8 @@ h3.my-profession {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 25px;
-    top: -30px;
+    left: -10px;
+    top: -35px;
     animation: autoEnlarge 4s infinite linear;  /* Ajuste a duração conforme necessário */
 }
 
@@ -1273,7 +1273,7 @@ html ::-moz-scrollbar-track {
 
 .btn-download-cv{
     margin-top: 11px;
-    right: -190px;
+    right: -310px;
     position: absolute;  
     height: 30px; 
     padding: 18px;
